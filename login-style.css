@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(248, 252, 252);
+}
+/*Login Page Style*/
+.login-wrapper{
+    position: relative;
+    background-size: cover;
+    background-position: top;
+}
+.login-wrapper__box{
+    border: 1px solid rgb(255, 251, 251);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 250;
+    margin: 1rem;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    display: block;
+    padding: 5rem;
+    padding-top: 0px;
+    width: 92%;
+    padding-bottom: 0;
+    transform: translate(-50%,-50%);
+}
+.login-wrapper__box--head{
+    margin: 5px;
+    color: white;
+    text-align: center;
+}
+.input-box{
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(160, 160, 160);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+    transition: all ease-out 0.5s;
+}
+.input-box:hover,
+.input-box:active{
+    border-bottom: 2px solid rgb(0, 134, 18);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2);
+}
+.input-box::before{
+    content: icon;
+    
+}
+.login-wrapper__box--head h1{
+    color: rgb(63, 139, 0);
+    padding: 5px;
+    padding-top: 8px;
+    font-family: sans-serif;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+.name{
+    display: inline-block;
+}
+.name-box{
+    margin-right: 2rem;
+    display: inline-block;
+}
+.name-box:first-child{
+    margin-left: 5rem;
+}
+.exam{
+    position: absolute;
+    top: 25%;
+}
