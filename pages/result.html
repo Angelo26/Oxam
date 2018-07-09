@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Logic-Exam</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/login-style.css">
+    <link rel="stylesheet" href="../css/question-style.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/result-style.css">
+</head>
+<body>
+
+
+<div class="result-box">
+    <section class="result-box__head">
+        <h5>Student Result</h5>
+    </section>
+    <section class="result-box__body">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'EM001')" id="defaultOpen">EM001</button>
+            <button class="tablinks" onclick="openCity(event, 'EM002')">EM002</button>
+            <button class="tablinks" onclick="openCity(event, 'EM003')">EM003</button>
+            <button class="tablinks" onclick="openCity(event, 'EM004')">EM004</button>
+            <button class="tablinks" onclick="openCity(event, 'EM005')">EM005</button>
+            <button class="tablinks" onclick="openCity(event, 'EM006')">EM006</button>
+            <button class="tablinks" onclick="openCity(event, 'EM007')">EM007</button>
+            <button class="tablinks" onclick="openCity(event, 'EM008')">EM008</button>
+            <button class="tablinks" onclick="openCity(event, 'EM009')">EM009</button>
+        </div>
+        <div id="EM001" class="tabcontent">
+            <h3>Kyarry Rai</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM002" class="tabcontent">
+            <h3>Anushila Rai</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM003" class="tabcontent">
+            <h3>Sisir Rai</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM004" class="tabcontent">
+            <h3>Sneha Neopane</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM005" class="tabcontent">
+            <h3>Yojan Rai</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM006" class="tabcontent">
+            <h3>Rezi Hangma Limbu</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM007" class="tabcontent">
+            <h3>Taya Hang Rai</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM008" class="tabcontent">
+            <h3>Prabina Gurung</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+        <div id="EM009" class="tabcontent">
+            <h3>Nita Poudel</h3>
+            <tr>
+                <td>Attempt </td>55<br>
+                <td>Correct </td>25<br>
+                <td>Wrong </td>35<br>
+                <td>Empty </td>65
+            </tr>
+            <p>Marks Obtained:<span class=""></span></p>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
